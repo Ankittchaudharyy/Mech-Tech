@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mech-green: #66B821;
+  --color-mech-greenDark: #4d8e15;
+  --color-mech-blue: #0084D6;
+  --color-mech-blueDark: #0062a3;
+  --color-mech-navy: #06234B;
+  --color-mech-navyDark: #04162F;
+  --color-mech-charcoal: #3A3A3A;
+  --color-mech-light: #F4F8FB;
+  --color-mech-orange: #F97316;
+  --font-display: "Exo 2", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #06234B;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #66B821, #0084D6);
+  border-radius: 4px;
+}

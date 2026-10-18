@@ -1,0 +1,6 @@
+{
+  "summary": "Implementation plan to restore and display all product photos and verbatim technical specifications from Catalog.pdf across all 62 product slots defined in mechtech-catalog.json, including multi-variant machine tables, auxiliary equipment photos, and uniform placeholder cards.",
+  "updatedAt": "2026-10-17T16:54:04.838679461Z",
+  "requestFeedback": true,
+  "userFacing": true
+}
