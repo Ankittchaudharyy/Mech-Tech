@@ -65,14 +65,19 @@ export const AboutSection: React.FC = () => {
                 "We appreciate your interest in Mechtech Enterprises. Your trust motivates us to deliver precision, innovation, and reliability in every wire processing, component forming, and PCB cutting solution we deliver."
               </p>
 
-              <div className="mt-8 pt-5 border-t border-white/10 flex items-center justify-between">
+              <div className="mt-8 pt-5 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <div className="font-bold text-white text-sm">Mechtech Enterprises</div>
-                  <div className="text-xs text-[#66B821]">NCR, Gujarat and Tamilnadu, India</div>
+                  <div className="text-xs text-[#66B821]">Noida, Uttar Pradesh • India</div>
                 </div>
-                <span className="text-xs bg-white/10 px-3 py-1 rounded-full font-mono text-slate-200">
-                  2025 Catalog
-                </span>
+                <a
+                  href="tel:+918043809518"
+                  className="inline-flex items-center gap-1.5 text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-full font-mono text-white transition border border-white/15"
+                  title="Direct Call Helpline"
+                >
+                  <span className="w-2 h-2 rounded-full bg-[#66B821] animate-pulse" />
+                  <span>+91 8043809518</span>
+                </a>
               </div>
             </div>
           </div>

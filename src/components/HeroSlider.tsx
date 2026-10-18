@@ -8,7 +8,7 @@ interface HeroSliderProps {
 }
 
 // Exactly 3 seconds per slide as requested (3000ms)
-const AUTO_PLAY_INTERVAL = 4000;
+const AUTO_PLAY_INTERVAL = 3000;
 
 export const HeroSlider: React.FC<HeroSliderProps> = ({ onViewProduct, onEnquireProduct }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -189,10 +189,11 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onViewProduct, onEnquire
               return (
                 <div
                   key={s.productId}
-                  className={`relative overflow-hidden px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 flex items-center gap-2 border text-left ${isActive
-                    ? 'bg-gradient-to-r from-[#66B821]/30 to-[#0084D6]/30 text-white border-[#66B821] shadow-lg scale-105'
-                    : 'bg-white/5 text-slate-400 border-white/10'
-                    }`}
+                  className={`relative overflow-hidden px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 flex items-center gap-2 border text-left ${
+                    isActive
+                      ? 'bg-gradient-to-r from-[#66B821]/30 to-[#0084D6]/30 text-white border-[#66B821] shadow-lg scale-105'
+                      : 'bg-white/5 text-slate-400 border-white/10'
+                  }`}
                 >
                   <span className="font-mono text-[11px] opacity-70">0{i + 1}</span>
                   <span>{s.model}</span>

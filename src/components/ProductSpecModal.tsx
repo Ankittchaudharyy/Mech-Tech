@@ -38,11 +38,11 @@ export const ProductSpecModal: React.FC<ProductSpecModalProps> = ({
         {/* Header */}
         <div className="bg-[#06234B] text-white p-6 flex items-start justify-between">
           <div className="flex items-start gap-4">
-            <div className="bg-white rounded-xl p-1.5 shadow-md shrink-0 hidden sm:block">
+            <div className="bg-white rounded-xl px-2.5 py-1.5 shadow-md shrink-0 hidden sm:block">
               <img
-                src="/images/logo.png"
+                src="/images/logo-horizontal.png"
                 alt="MECHTECH"
-                className="h-10 w-auto object-contain"
+                className="h-8 w-auto object-contain"
               />
             </div>
             <div>
@@ -154,12 +154,16 @@ export const ProductSpecModal: React.FC<ProductSpecModalProps> = ({
 
         {/* Modal Footer */}
         <div className="bg-slate-50 px-6 py-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
-          <div className="text-xs text-slate-500 flex items-center gap-2">
-            <PhoneCall className="w-4 h-4 text-[#66B821]" />
+          <a
+            href="tel:+918043809518"
+            className="text-xs text-slate-600 hover:text-[#06234B] flex items-center gap-2 group transition"
+            title="Call +91 8043809518"
+          >
+            <PhoneCall className="w-4 h-4 text-[#66B821] group-hover:scale-110 transition-transform" />
             <span>
-              Direct Helpline: <strong className="text-slate-800">+91 9149158815</strong>
+              Direct Helpline: <strong className="text-slate-800 group-hover:text-[#66B821] transition">+91 8043809518</strong>
             </span>
-          </div>
+          </a>
 
           <div className="flex items-center gap-2">
             <button

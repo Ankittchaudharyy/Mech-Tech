@@ -25,11 +25,11 @@ export const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ onInquireClick
 
         <div className="flex items-center space-x-4 sm:space-x-5 text-xs">
           <a
-            href="tel:+918048250260"
+            href="tel:+918043809518"
             className="flex items-center gap-1.5 hover:text-[#66B821] transition font-medium"
           >
             <PhoneCall className="w-3.5 h-3.5 text-[#66B821]" />
-            <span>+91 8048250260</span>
+            <span>+91 8043809518</span>
           </a>
           <a
             href="mailto:info@mechtechenterprises.com"

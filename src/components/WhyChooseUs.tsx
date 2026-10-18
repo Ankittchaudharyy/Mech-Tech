@@ -11,8 +11,8 @@ export const WhyChooseUs: React.FC = () => {
     },
     {
       icon: <Headphones className="w-6 h-6 text-[#0084D6]" />,
-      title: 'Customer Service',
-      desc: 'Factory-trained technicians providing on-site commissioning, operator training & ready spares in Noida.',
+      title: 'Customer Service & Helpline',
+      desc: 'Factory-trained technicians providing on-site commissioning, operator training, spares & direct helpline (+91 8043809518).',
       bg: 'bg-[#0084D6]/15',
     },
     {

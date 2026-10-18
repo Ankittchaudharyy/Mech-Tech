@@ -133,11 +133,11 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
         <div className="bg-gradient-to-r from-[#06234B] via-[#083066] to-[#0A3D80] text-white p-5 sm:p-6 relative shrink-0">
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-start gap-4">
-              <div className="bg-white rounded-xl p-1.5 shadow-md shrink-0 hidden sm:block">
+              <div className="bg-white rounded-xl px-2.5 py-1.5 shadow-md shrink-0 hidden sm:block">
                 <img
-                  src="/images/logo.png"
+                  src="/images/logo-horizontal.png"
                   alt="MECHTECH"
-                  className="h-10 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
               </div>
               <div>
@@ -394,9 +394,13 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
               <CheckCircle2 className="w-4 h-4 text-[#66B821] shrink-0" />
               <span>Official MECH TECH guarantee: No spam, direct engineer response within 24 hours.</span>
             </div>
-            <span className="font-mono text-slate-500 shrink-0 font-bold hidden sm:inline">
-              +91 9149158815
-            </span>
+            <a
+              href="tel:+918043809518"
+              className="font-mono text-slate-700 hover:text-[#66B821] shrink-0 font-bold hidden sm:inline transition"
+              title="Call Helpline"
+            >
+              +91 8043809518
+            </a>
           </div>
 
           {/* Form Actions Footer */}

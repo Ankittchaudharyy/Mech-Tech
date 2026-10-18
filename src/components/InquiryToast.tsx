@@ -51,9 +51,18 @@ export const InquiryToast: React.FC<InquiryToastProps> = ({
         <div className="absolute -bottom-10 -left-10 w-28 h-28 bg-[#0084D6]/20 rounded-full blur-xl pointer-events-none" />
 
         <div className="flex items-start gap-3.5 relative z-10">
-          {/* Success Icon */}
-          <div className="p-2.5 rounded-xl bg-gradient-to-br from-[#66B821] to-[#4d8e15] text-white shadow-lg shrink-0 mt-0.5 flex items-center justify-center animate-bounce">
-            <CheckCircle2 className="w-5 h-5 stroke-[2.5]" />
+          {/* Mechtech Brand Logo / Success Badge */}
+          <div className="relative shrink-0 mt-0.5">
+            <div className="w-11 h-11 rounded-xl bg-white p-1 border border-white/20 shadow-md flex items-center justify-center">
+              <img
+                src="/images/mechtech-gears.png"
+                alt="Mechtech"
+                className="w-8 h-8 object-contain"
+              />
+            </div>
+            <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#66B821] text-white flex items-center justify-center shadow-sm">
+              <CheckCircle2 className="w-3.5 h-3.5 stroke-[3]" />
+            </div>
           </div>
 
           {/* Content */}
@@ -78,7 +87,13 @@ export const InquiryToast: React.FC<InquiryToastProps> = ({
                 Mechtech Engineering HQ, Noida
               </span>
               <span className="text-white/40">•</span>
-              <span className="font-mono text-slate-400">Direct: +91 9149158815</span>
+              <a
+                href="tel:+918043809518"
+                className="font-mono text-slate-300 hover:text-[#66B821] transition"
+                title="Call Direct Helpline"
+              >
+                Direct: +91 8043809518
+              </a>
             </div>
           </div>
 

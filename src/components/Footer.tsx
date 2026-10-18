@@ -17,11 +17,11 @@ export const Footer: React.FC<FooterProps> = ({ onCategorySelect }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-white/10">
           {/* Brand Info */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
+            <div className="inline-flex items-center bg-white rounded-2xl p-3 shadow-md">
               <img
-                src="/images/logo.png"
-                alt="MECHTECH ENTERPRISES"
-                className="h-12 w-auto object-contain bg-white rounded-lg p-1.5 shadow-sm"
+                src="/images/logo.jpg"
+                alt="Mechtech Enterprises"
+                className="h-20 w-auto object-contain rounded-xl"
               />
             </div>
             <p className="text-slate-400 leading-relaxed text-xs">
@@ -90,13 +90,13 @@ export const Footer: React.FC<FooterProps> = ({ onCategorySelect }) => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#F97316] shrink-0 mt-0.5" />
                 <span className="text-slate-300 leading-relaxed">
-                  NCR, Gujarat and Tamilnadu,India
+                  NCR, Gujarat and Tamilnadu
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#0084D6] shrink-0" />
-                <a href="tel:+918048250260" className="text-white hover:text-[#F97316] transition">
-                  +91 918048250260
+                <a href="tel:+918043809518" className="text-white hover:text-[#F97316] transition">
+                  +91 8043809518
                 </a>
               </div>
               <div className="flex items-center gap-2">
