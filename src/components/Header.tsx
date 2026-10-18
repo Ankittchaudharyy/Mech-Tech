@@ -27,13 +27,13 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 gap-4">
+        <div className="flex items-center justify-between h-20 sm:h-24 md:h-28 gap-4">
           {/* Mechtech Official Brand Logo */}
           <a href="#hero" className="flex items-center group shrink-0 py-1" title="Mechtech Enterprises - Home">
             <img
-              src="/images/logo-horizontal.png"
+              src="/images/logo.jpg"
               alt="Mechtech Enterprises"
-              className="h-11 sm:h-13 w-auto object-contain transition-transform group-hover:scale-[1.02] duration-200"
+              className="h-16 sm:h-20 md:h-24 w-auto object-contain rounded-xl transition-transform group-hover:scale-[1.02] duration-200"
             />
           </a>
 
