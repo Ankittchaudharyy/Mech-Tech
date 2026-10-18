@@ -1,11 +1,4 @@
 import { Category, Product } from '../types/index.ts';
-import {
-  IMG_BENCHTOP_STRIPPER,
-  IMG_COAXIAL_STRIPPER,
-  IMG_CRIMPER_TOWER,
-  IMG_PCB_CUTTER_FORMING,
-  IMG_PNEUMATIC_CRIMPER,
-} from './catalogImages.ts';
 
 export const CATALOG_CATEGORIES: Category[] = [
   {
@@ -26,7 +19,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '04',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: '/images/me-90t-plus.jpg',
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -53,7 +46,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '05',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -81,7 +74,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '06',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -109,7 +102,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '07',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -133,7 +126,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '08',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -157,7 +150,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '09',
             photo: 'yes',
             svgType: 'pneumatic-stripper',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -179,7 +172,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '10',
             photo: 'yes',
             svgType: 'pneumatic-stripper',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -202,7 +195,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '11',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -224,7 +217,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '12',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -253,7 +246,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '14',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -278,7 +271,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '28',
             photo: 'yes',
             svgType: 'coaxial-machine',
-            image: IMG_COAXIAL_STRIPPER,
+            image: '/images/me-9800.jpg',
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -305,7 +298,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '29',
             photo: 'yes',
             svgType: 'coaxial-machine',
-            image: IMG_COAXIAL_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -332,7 +325,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '30',
             photo: 'yes',
             svgType: 'coaxial-machine',
-            image: IMG_COAXIAL_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-cutting-stripping',
             specs: {
@@ -363,7 +356,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '01',
             photo: 'yes',
             svgType: 'crimper-tower',
-            image: IMG_CRIMPER_TOWER,
+            image: '/images/me-01.jpg',
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-crimping',
             specs: {
@@ -388,7 +381,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '02',
             photo: 'yes',
             svgType: 'crimper-tower',
-            image: IMG_CRIMPER_TOWER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-crimping',
             specs: {
@@ -413,7 +406,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '03',
             photo: 'yes',
             svgType: 'tinning-cabin',
-            image: IMG_CRIMPER_TOWER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-crimping',
             specs: {
@@ -439,7 +432,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '13',
             photo: 'yes',
             svgType: 'crimper-tower',
-            image: IMG_CRIMPER_TOWER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-crimping',
             specs: {
@@ -473,7 +466,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '10',
             photo: 'yes',
             svgType: 'pneumatic-stripper',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-twisting-tying',
             specs: {
@@ -495,7 +488,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '21',
             photo: 'yes',
             svgType: 'twister-machine',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-twisting-tying',
             specs: {
@@ -515,7 +508,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '26',
             photo: 'yes',
             svgType: 'twister-machine',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-twisting-tying',
             specs: {
@@ -536,7 +529,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '27',
             photo: 'yes',
             svgType: 'twister-machine',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-twisting-tying',
             specs: {
@@ -559,7 +552,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '20',
             photo: 'yes',
             svgType: 'crimper-tower',
-            image: IMG_CRIMPER_TOWER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-twisting-tying',
             specs: {
@@ -592,7 +585,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '25',
             photo: 'yes',
             svgType: 'twister-machine',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'cable-taping-wrapping',
             specs: {
@@ -640,7 +633,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '16',
             photo: 'yes',
             svgType: 'pneumatic-crimper',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'terminal-connector-processing',
             specs: {
@@ -661,7 +654,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '17',
             photo: 'yes',
             svgType: 'pneumatic-crimper',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'terminal-connector-processing',
             specs: {
@@ -682,7 +675,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '18',
             photo: 'yes',
             svgType: 'pneumatic-crimper',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'terminal-connector-processing',
             specs: {
@@ -738,7 +731,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '22',
             photo: 'yes',
             svgType: 'pull-tester',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'wire-harness-testing',
             specs: {
@@ -787,7 +780,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '23',
             photo: 'yes',
             svgType: 'terminal-press',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'ultrasonic-wire-splicing',
             specs: {
@@ -809,7 +802,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '24',
             photo: 'yes',
             svgType: 'terminal-press',
-            image: IMG_PNEUMATIC_CRIMPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'ultrasonic-wire-splicing',
             specs: {
@@ -849,7 +842,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogNumber: '19',
             photo: 'yes',
             svgType: 'benchtop-stripper',
-            image: IMG_BENCHTOP_STRIPPER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'cable-wire-processing',
             specs: {
@@ -901,7 +894,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogPage: 10,
             photo: 'yes',
             svgType: 'feeder-stand',
-            image: IMG_CRIMPER_TOWER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'auxiliary-equipment',
             specs: null,
@@ -915,7 +908,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogPage: 10,
             photo: 'yes',
             svgType: 'feeder-stand',
-            image: IMG_CRIMPER_TOWER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'auxiliary-equipment',
             specs: null,
@@ -929,7 +922,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogPage: 10,
             photo: 'yes',
             svgType: 'feeder-stand',
-            image: IMG_CRIMPER_TOWER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'auxiliary-equipment',
             specs: null,
@@ -943,7 +936,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             catalogPage: 10,
             photo: 'yes',
             svgType: 'feeder-stand',
-            image: IMG_CRIMPER_TOWER,
+            image: null,
             categoryId: 'wire-harness-machines',
             subcategoryId: 'auxiliary-equipment',
             specs: null,
@@ -1111,7 +1104,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             photo: 'yes',
             svgType: 'pcb-cutter',
             group: 'Auto PCB Cutting Machine',
-            image: IMG_PCB_CUTTER_FORMING,
+            image: null,
             categoryId: 'smt-machines',
             subcategoryId: 'pcb-component-processing',
             specs: {
@@ -1136,7 +1129,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             photo: 'yes',
             svgType: 'pcb-cutter',
             group: 'Auto PCB Cutting Machine',
-            image: IMG_PCB_CUTTER_FORMING,
+            image: '/images/me-805a.jpg',
             categoryId: 'smt-machines',
             subcategoryId: 'pcb-component-processing',
             specs: {
@@ -1159,7 +1152,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             photo: 'yes',
             svgType: 'pcb-forming',
             group: 'Auto Component Cutting & Forming Machine',
-            image: IMG_PCB_CUTTER_FORMING,
+            image: null,
             categoryId: 'smt-machines',
             subcategoryId: 'pcb-component-processing',
             specs: {
@@ -1177,7 +1170,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             photo: 'yes',
             svgType: 'pcb-forming',
             group: 'Auto Component Cutting & Forming Machine',
-            image: IMG_PCB_CUTTER_FORMING,
+            image: null,
             categoryId: 'smt-machines',
             subcategoryId: 'pcb-component-processing',
             specs: {
@@ -1197,7 +1190,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             photo: 'yes',
             svgType: 'pcb-forming',
             group: 'Auto Component Cutting & Forming Machine',
-            image: IMG_PCB_CUTTER_FORMING,
+            image: '/images/wlf-400a.jpg',
             categoryId: 'smt-machines',
             subcategoryId: 'pcb-component-processing',
             specs: {
@@ -1219,7 +1212,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             photo: 'yes',
             svgType: 'pcb-forming',
             group: 'Auto Component Cutting & Forming Machine',
-            image: IMG_PCB_CUTTER_FORMING,
+            image: null,
             categoryId: 'smt-machines',
             subcategoryId: 'pcb-component-processing',
             specs: {
@@ -1239,7 +1232,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             photo: 'shared',
             svgType: 'pcb-forming',
             group: 'Auto Component Cutting & Forming Machine',
-            image: IMG_PCB_CUTTER_FORMING,
+            image: null,
             categoryId: 'smt-machines',
             subcategoryId: 'pcb-component-processing',
             specs: {
@@ -1262,7 +1255,7 @@ export const CATALOG_CATEGORIES: Category[] = [
             photo: 'shared',
             svgType: 'pcb-forming',
             group: 'Auto Component Cutting & Forming Machine',
-            image: IMG_PCB_CUTTER_FORMING,
+            image: null,
             categoryId: 'smt-machines',
             subcategoryId: 'pcb-component-processing',
             specs: {

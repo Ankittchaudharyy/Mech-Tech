@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { ArrowRight, Send, Activity } from 'lucide-react';
+import { ArrowRight, Send, Activity, ImageOff } from 'lucide-react';
 import { HERO_SLIDES } from '../data/products.ts';
 
 interface HeroSliderProps {
@@ -8,7 +8,7 @@ interface HeroSliderProps {
 }
 
 // Exactly 3 seconds per slide as requested (3000ms)
-const AUTO_PLAY_INTERVAL = 3000;
+const AUTO_PLAY_INTERVAL = 4000;
 
 export const HeroSlider: React.FC<HeroSliderProps> = ({ onViewProduct, onEnquireProduct }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -133,18 +133,30 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onViewProduct, onEnquire
                         </span>
                       </div>
 
-                      {/* Real Machine Photograph */}
+                      {/* Machine Photograph or Neutral Placeholder */}
                       <div
                         onClick={() => onViewProduct(slide.productId)}
                         className="h-64 bg-white rounded-2xl p-3 shadow-inner flex items-center justify-center relative overflow-hidden cursor-pointer"
                       >
-                        {slide.image && (
+                        {slide.image ? (
                           <img
                             src={slide.image}
                             alt={`${slide.model} - ${slide.title}`}
                             referrerPolicy="no-referrer"
                             className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                           />
+                        ) : (
+                          <div className="w-full h-full bg-slate-100 rounded-xl flex flex-col items-center justify-center p-4 text-center select-none border border-slate-200">
+                            <div className="w-10 h-10 rounded-xl bg-slate-200 flex items-center justify-center text-slate-500 mb-2">
+                              <ImageOff className="w-5 h-5 text-slate-500" />
+                            </div>
+                            <p className="font-display font-bold text-xs text-[#06234B] line-clamp-2 px-3 leading-snug">
+                              {slide.model} - {slide.title}
+                            </p>
+                            <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1.5">
+                              Image Not Available
+                            </span>
+                          </div>
                         )}
                       </div>
 
@@ -177,11 +189,10 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({ onViewProduct, onEnquire
               return (
                 <div
                   key={s.productId}
-                  className={`relative overflow-hidden px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 flex items-center gap-2 border text-left ${
-                    isActive
-                      ? 'bg-gradient-to-r from-[#66B821]/30 to-[#0084D6]/30 text-white border-[#66B821] shadow-lg scale-105'
-                      : 'bg-white/5 text-slate-400 border-white/10'
-                  }`}
+                  className={`relative overflow-hidden px-4 py-2 rounded-xl text-xs font-bold transition-all duration-300 flex items-center gap-2 border text-left ${isActive
+                    ? 'bg-gradient-to-r from-[#66B821]/30 to-[#0084D6]/30 text-white border-[#66B821] shadow-lg scale-105'
+                    : 'bg-white/5 text-slate-400 border-white/10'
+                    }`}
                 >
                   <span className="font-mono text-[11px] opacity-70">0{i + 1}</span>
                   <span>{s.model}</span>

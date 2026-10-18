@@ -53,5 +53,5 @@ export interface HeroSlide {
   svgType: string;
   accent: string;
   bgGradient: string;
-  image?: string;
+  image?: string | null;
 }

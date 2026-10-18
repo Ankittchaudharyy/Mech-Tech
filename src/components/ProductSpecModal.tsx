@@ -37,28 +37,37 @@ export const ProductSpecModal: React.FC<ProductSpecModalProps> = ({
       >
         {/* Header */}
         <div className="bg-[#06234B] text-white p-6 flex items-start justify-between">
-          <div>
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-bold uppercase text-[#F97316] tracking-wider">
-                {(product.categoryId || 'Equipment').replace(/-/g, ' ')} •{' '}
-                {(product.subcategoryId || 'Machine').replace(/-/g, ' ')}
-              </span>
-              {product.catalogPage && (
-                <span className="text-[11px] font-mono px-2.5 py-0.5 rounded bg-white/10 text-slate-200">
-                  Catalog Pg {String(product.catalogPage).padStart(2, '0')}
-                  {product.catalogNumber ? ` • #${product.catalogNumber}` : ''}
-                </span>
-              )}
+          <div className="flex items-start gap-4">
+            <div className="bg-white rounded-xl p-1.5 shadow-md shrink-0 hidden sm:block">
+              <img
+                src="/images/logo.png"
+                alt="MECHTECH"
+                className="h-10 w-auto object-contain"
+              />
             </div>
-            <h3 className="font-display font-extrabold text-2xl sm:text-3xl mt-1.5">
-              {product.model ? (
-                <>
-                  <span className="text-[#F97316]">{product.model}</span> | {product.name}
-                </>
-              ) : (
-                product.name
-              )}
-            </h3>
+            <div>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xs font-bold uppercase text-[#F97316] tracking-wider">
+                  {(product.categoryId || 'Equipment').replace(/-/g, ' ')} •{' '}
+                  {(product.subcategoryId || 'Machine').replace(/-/g, ' ')}
+                </span>
+                {product.catalogPage && (
+                  <span className="text-[11px] font-mono px-2.5 py-0.5 rounded bg-white/10 text-slate-200">
+                    Catalog Pg {String(product.catalogPage).padStart(2, '0')}
+                    {product.catalogNumber ? ` • #${product.catalogNumber}` : ''}
+                  </span>
+                )}
+              </div>
+              <h3 className="font-display font-extrabold text-2xl sm:text-3xl mt-1.5">
+                {product.model ? (
+                  <>
+                    <span className="text-[#F97316]">{product.model}</span> | {product.name}
+                  </>
+                ) : (
+                  product.name
+                )}
+              </h3>
+            </div>
           </div>
           <button
             type="button"

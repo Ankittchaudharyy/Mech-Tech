@@ -68,7 +68,7 @@ export const AboutSection: React.FC = () => {
               <div className="mt-8 pt-5 border-t border-white/10 flex items-center justify-between">
                 <div>
                   <div className="font-bold text-white text-sm">Mechtech Enterprises</div>
-                  <div className="text-xs text-[#66B821]">Noida, Uttar Pradesh • India</div>
+                  <div className="text-xs text-[#66B821]">NCR, Gujarat and Tamilnadu, India</div>
                 </div>
                 <span className="text-xs bg-white/10 px-3 py-1 rounded-full font-mono text-slate-200">
                   2025 Catalog

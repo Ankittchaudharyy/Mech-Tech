@@ -17,13 +17,12 @@ export const Footer: React.FC<FooterProps> = ({ onCategorySelect }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-white/10">
           {/* Brand Info */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-2">
-              <span className="font-display font-extrabold text-2xl tracking-wider text-white italic">
-                MECH<span className="text-[#0084D6]">TECH</span>
-              </span>
-              <span className="text-[10px] font-bold tracking-[0.25em] text-[#F97316] uppercase">
-                ENTERPRISES
-              </span>
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/logo.png"
+                alt="MECHTECH ENTERPRISES"
+                className="h-12 w-auto object-contain bg-white rounded-lg p-1.5 shadow-sm"
+              />
             </div>
             <p className="text-slate-400 leading-relaxed text-xs">
               Premier industrial equipment supplier in India specialized in automated wire cutting, stripping, terminal crimping, radial/axial component forming, and PCB depaneling machinery.
@@ -85,19 +84,19 @@ export const Footer: React.FC<FooterProps> = ({ onCategorySelect }) => {
           {/* Contact Details */}
           <div className="lg:col-span-3 space-y-3">
             <h4 className="font-bold text-sm text-white uppercase tracking-wider">
-              Noida Headquarters
+              Headquarters
             </h4>
             <div className="space-y-2.5">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#F97316] shrink-0 mt-0.5" />
                 <span className="text-slate-300 leading-relaxed">
-                  S N 56 First Floor, Jagat Plaza 2, Near Amritpuram, NOIDA, Uttar Pradesh - 201308
+                  NCR, Gujarat and Tamilnadu,India
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#0084D6] shrink-0" />
-                <a href="tel:+919149158815" className="text-white hover:text-[#F97316] transition">
-                  +91 9149158815
+                <a href="tel:+918048250260" className="text-white hover:text-[#F97316] transition">
+                  +91 918048250260
                 </a>
               </div>
               <div className="flex items-center gap-2">

@@ -12,14 +12,8 @@ import {
   Sparkles,
   ShieldCheck,
   Cpu,
+  ImageOff,
 } from 'lucide-react';
-import {
-  IMG_CRIMPER_TOWER,
-  IMG_COAXIAL_STRIPPER,
-  IMG_PCB_CUTTER_FORMING,
-  IMG_PNEUMATIC_CRIMPER,
-  IMG_BENCHTOP_STRIPPER,
-} from '../data/catalogImages.ts';
 
 export interface TestimonialSlide {
   id: string;
@@ -38,7 +32,7 @@ export interface TestimonialSlide {
   productModel: string;
   productName: string;
   productCategory: string;
-  productImage: string;
+  productImage?: string | null;
   productSpecs: { label: string; value: string }[];
 }
 
@@ -68,11 +62,11 @@ export const ClientTestimonials: React.FC<ClientTestimonialsProps> = ({
       review:
         'We installed two ME-01 double-end crimping towers for our 4-wheeler wiring harness line. The cutting tolerance and crimp pull-test consistency have been phenomenal. Our line output jumped from 1,800 to 3,500 parts per hour with near-zero wire wastage.',
       verified: true,
-      productId: 'me-01',
-      productModel: 'ME-01',
-      productName: 'Auto Double End Cutting/Stripping/Crimping Machine',
-      productCategory: 'Wire Harness • Crimping Tower',
-      productImage: IMG_CRIMPER_TOWER,
+      productId: "me-01",
+      productModel: "ME-01",
+      productName: "Auto Double End Cutting/Stripping/Crimping Machine",
+      productCategory: "Wire Harness • Wire Crimping",
+      productImage: "/images/me-01.jpg",
       productSpecs: [
         { label: 'Wire Range', value: 'AWG#30 - AWG#18' },
         { label: 'Crimp Force', value: '1.5 - 2.0 Ton' },
@@ -93,11 +87,11 @@ export const ClientTestimonials: React.FC<ClientTestimonialsProps> = ({
       review:
         'Stripping multi-layer RG-178 and RG-316 coaxial cables with 0.01mm rotary precision without nicking the inner shield used to be our biggest bottleneck. The ME-9800 rotary blades solved this completely. Mechtech’s service team also provided quick on-site training.',
       verified: true,
-      productId: 'me-9800',
-      productModel: 'ME-9800',
-      productName: 'Automatic Rotary Coaxial Stripping Machine',
-      productCategory: 'Wire Harness • Coaxial Processing',
-      productImage: IMG_COAXIAL_STRIPPER,
+      productId: "me-9800",
+      productModel: "ME-9800",
+      productName: "Automatic Rotary Coaxial Stripping Machine",
+      productCategory: "Wire Harness • Coaxial Processing",
+      productImage: "/images/me-9800.jpg",
       productSpecs: [
         { label: 'Cable Diameter', value: '0.8 - 4.0 mm' },
         { label: 'Precision Unit', value: '0.01 mm Depth' },
@@ -118,11 +112,11 @@ export const ClientTestimonials: React.FC<ClientTestimonialsProps> = ({
       review:
         'For our high-density FR4 LED drivers and aluminium power boards, zero-stress depaneling was essential. The ME-805A circular blade gives clean, burr-free cuts with no component cracking. Exceptional build quality and local Noida engineering support.',
       verified: true,
-      productId: 'me-805a',
-      productModel: 'ME-805A',
-      productName: 'V-Grooved PCB Depaneling Cutting Machine',
-      productCategory: 'SMT Machines • PCB Processing',
-      productImage: IMG_PCB_CUTTER_FORMING,
+      productId: "me-805a",
+      productModel: "ME-805A",
+      productName: "V-Grooved PCB Depaneling Cutting Machine",
+      productCategory: "SMT Machines • PCB Cutting",
+      productImage: "/images/me-805a.jpg",
       productSpecs: [
         { label: 'PCB Thickness', value: '0.6 - 3.2 mm' },
         { label: 'V-Groove Min', value: '0.25 mm Size' },
@@ -143,16 +137,16 @@ export const ClientTestimonials: React.FC<ClientTestimonialsProps> = ({
       review:
         'Processing 16 sq.mm and 25 sq.mm battery cables required heavy-duty equipment. Mechtech supplied the ME-9-4 heavy 6-ton pneumatic crimping station and ME-90L cutter. It effortlessly handles thick multi-strand copper cables 24/7 with rock-solid crimp integrity.',
       verified: true,
-      productId: 'me-9-4',
-      productModel: 'ME-9-4',
-      productName: 'Pneumatic Type Terminal Crimping Machine (6-Ton)',
-      productCategory: 'Wire Harness • Terminal Processing',
-      productImage: IMG_PNEUMATIC_CRIMPER,
+      productId: "wlf-400a",
+      productModel: "WLF-400A",
+      productName: "Radial Component Lead Cutting & Forming Machine",
+      productCategory: "SMT Machines • Component Lead Forming",
+      productImage: "/images/wlf-400a.jpg",
       productSpecs: [
-        { label: 'Crimp Range', value: '8 - 35 sq. mm' },
-        { label: 'Crimp Output', value: '6.0 Ton Heavy Force' },
-        { label: 'Air Pressure', value: '5 - 8 Kg' },
-        { label: 'Application', value: 'Loose Thimble / Battery Lugs' },
+        { label: "Pitch Range", value: "3 - 20 mm (Loose)" },
+        { label: "Lead Length", value: "6 - 25 mm" },
+        { label: "Wire Diam.", value: "0.4 - 1.2 mm" },
+        { label: "Enclosure", value: "Pneumatic Safety Dome" },
       ],
     },
     {
@@ -168,11 +162,11 @@ export const ClientTestimonials: React.FC<ClientTestimonialsProps> = ({
       review:
         'The ME-90T+ benchtop stripping machine cut our daily setup changeover times in half. The knurled feed rollers handle both thin signal wires and 1.5 sq.mm power lines without slipping. Mechtech Enterprises is our primary go-to supplier for all wire processing automation.',
       verified: true,
-      productId: 'me-90t-plus',
-      productModel: 'ME-90T+',
-      productName: 'Automatic Computerized Wire Stripping Machine',
-      productCategory: 'Wire Harness • Cutting & Stripping',
-      productImage: IMG_BENCHTOP_STRIPPER,
+      productId: "me-90t-plus",
+      productModel: "ME-90T+",
+      productName: "Automatic Computerized Wire Stripping Machine",
+      productCategory: "Wire Harness • Cutting & Stripping",
+      productImage: "/images/me-90t-plus.jpg",
       productSpecs: [
         { label: 'Wire Range', value: '0.032 - 1.5 sq. mm (AWG#32-15)' },
         { label: 'Speed', value: '4000 - 12000 Pcs./hour' },
@@ -380,14 +374,30 @@ export const ClientTestimonials: React.FC<ClientTestimonialsProps> = ({
                         className="h-52 bg-white rounded-xl p-3 shadow-inner flex items-center justify-center relative overflow-hidden group cursor-pointer"
                         title={`Click to view full specs of ${item.productModel}`}
                       >
-                        <img
-                          src={item.productImage}
-                          alt={`${item.productModel} - ${item.productName}`}
-                          className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-sm text-white text-[10px] px-2 py-0.5 rounded font-mono">
-                          Catalog Photo
-                        </div>
+                        {item.productImage ? (
+                          <>
+                            <img
+                              src={item.productImage}
+                              alt={`${item.productModel} - ${item.productName}`}
+                              className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-sm text-white text-[10px] px-2 py-0.5 rounded font-mono">
+                              Catalog Photo
+                            </div>
+                          </>
+                        ) : (
+                          <div className="w-full h-full bg-slate-100 rounded-lg flex flex-col items-center justify-center p-3 text-center border border-slate-200">
+                            <div className="w-8 h-8 rounded-lg bg-slate-200 flex items-center justify-center text-slate-500 mb-1.5">
+                              <ImageOff className="w-4 h-4 text-slate-500" />
+                            </div>
+                            <p className="font-display font-bold text-xs text-[#06234B] line-clamp-1 px-1">
+                              {item.productModel} - {item.productName}
+                            </p>
+                            <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mt-1">
+                              Image Not Available
+                            </span>
+                          </div>
+                        )}
                       </div>
 
                       {/* Machine Title */}
@@ -456,13 +466,23 @@ export const ClientTestimonials: React.FC<ClientTestimonialsProps> = ({
                     : 'bg-white/10 text-white border-white/10 hover:bg-white/20 hover:border-white/25'
                 }`}
               >
-                <img
-                  src={t.productImage}
-                  alt={t.productModel}
-                  className={`w-10 h-10 object-contain rounded-lg p-1 shrink-0 ${
-                    isSelected ? 'bg-slate-100 border border-slate-200' : 'bg-white/10'
-                  }`}
-                />
+                {t.productImage ? (
+                  <img
+                    src={t.productImage}
+                    alt={t.productModel}
+                    className={`w-10 h-10 object-contain rounded-lg p-1 shrink-0 ${
+                      isSelected ? 'bg-slate-100 border border-slate-200' : 'bg-white/10'
+                    }`}
+                  />
+                ) : (
+                  <div
+                    className={`w-10 h-10 rounded-lg p-1 shrink-0 flex items-center justify-center ${
+                      isSelected ? 'bg-slate-100 border border-slate-200 text-slate-500' : 'bg-white/10 text-slate-300'
+                    }`}
+                  >
+                    <ImageOff className="w-5 h-5" />
+                  </div>
+                )}
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center justify-between">
                     <span

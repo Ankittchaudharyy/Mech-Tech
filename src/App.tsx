@@ -24,6 +24,7 @@ import { EnquiryModal } from './components/EnquiryModal.tsx';
 import { Footer } from './components/Footer.tsx';
 import { FloatingActions } from './components/FloatingActions.tsx';
 import { InquiryToast } from './components/InquiryToast.tsx';
+import { AudioToggle } from './components/AudioToggle.tsx';
 
 export default function App() {
   const [selectedCategoryId, setSelectedCategoryId] = useState<string>('all');
@@ -151,6 +152,9 @@ export default function App() {
         duration={3500}
         message={inquiryMessage}
       />
+
+      {/* 17. Background Ambient Music Toggle (bottom-left corner, off by default, no autoplay) */}
+      <AudioToggle />
     </div>
   );
 }

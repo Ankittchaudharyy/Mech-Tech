@@ -28,50 +28,13 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-4">
-          {/* Mechtech Brand Logo with Interlocking Gears SVG */}
-          <a href="#hero" className="flex items-center gap-3 group shrink-0">
-            <div className="relative w-14 h-14 flex items-center justify-center">
-              <svg viewBox="0 0 140 120" className="w-full h-full drop-shadow-sm">
-                <defs>
-                  <linearGradient id="hdrGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#80D432" />
-                    <stop offset="100%" stopColor="#4E9614" />
-                  </linearGradient>
-                  <linearGradient id="hdrBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#22A7F0" />
-                    <stop offset="100%" stopColor="#0066B2" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M18,78 C5,98 35,112 82,92 C118,76 136,46 122,28 C115,20 105,22 112,30 C120,42 102,68 72,82 C40,95 22,90 25,75 Z"
-                  fill="url(#hdrBlueGrad)"
-                />
-                <path
-                  d="M14,72 C2,90 24,106 60,96 L54,86 C28,92 16,84 22,68 Z"
-                  fill="url(#hdrGreenGrad)"
-                />
-                <g transform="translate(52,64)">
-                  <circle r="22" fill="none" stroke="url(#hdrGreenGrad)" strokeWidth="10" strokeDasharray="14 6" />
-                  <circle r="17" fill="none" stroke="url(#hdrGreenGrad)" strokeWidth="7" />
-                </g>
-                <g transform="translate(86,42)">
-                  <circle r="22" fill="none" stroke="url(#hdrBlueGrad)" strokeWidth="10" strokeDasharray="14 6" />
-                  <circle r="17" fill="none" stroke="url(#hdrBlueGrad)" strokeWidth="7" />
-                </g>
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-extrabold text-2xl sm:text-3xl tracking-wider text-[#06234B] italic leading-none">
-                MECH<span className="text-[#0084D6]">TECH</span>
-              </span>
-              <div className="flex items-center gap-1.5 mt-1">
-                <span className="h-[2px] w-3 bg-[#66B821]" />
-                <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.28em] text-[#F97316] uppercase">
-                  ENTERPRISES
-                </span>
-                <span className="h-[2px] w-3 bg-[#66B821]" />
-              </div>
-            </div>
+          {/* Mechtech Official Brand Logo */}
+          <a href="#hero" className="flex items-center gap-3 group shrink-0 py-1">
+            <img
+              src="/images/logo.png"
+              alt="MECHTECH ENTERPRISES"
+              className="h-14 sm:h-16 w-auto object-contain transition-transform group-hover:scale-105 duration-300 drop-shadow-sm"
+            />
           </a>
 
           {/* Desktop Navigation */}

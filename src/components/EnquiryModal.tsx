@@ -132,17 +132,26 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
         {/* Header Bar */}
         <div className="bg-gradient-to-r from-[#06234B] via-[#083066] to-[#0A3D80] text-white p-5 sm:p-6 relative shrink-0">
           <div className="flex items-start justify-between gap-4">
-            <div>
-              <div className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#66B821] bg-[#66B821]/15 px-3 py-1 rounded-full border border-[#66B821]/30">
-                <ShieldCheck className="w-3.5 h-3.5" />
-                <span>Official MECH TECH RFQ &amp; Sales Enquiry</span>
+            <div className="flex items-start gap-4">
+              <div className="bg-white rounded-xl p-1.5 shadow-md shrink-0 hidden sm:block">
+                <img
+                  src="/images/logo.png"
+                  alt="MECHTECH"
+                  className="h-10 w-auto object-contain"
+                />
               </div>
-              <h3 className="font-display font-extrabold text-xl sm:text-2xl text-white mt-2 leading-snug">
-                Enquire Now / Get Quote
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-lg leading-relaxed">
-                Fill in your details below to receive technical specifications, formal quotation, and dispatch lead time from our engineering team.
-              </p>
+              <div>
+                <div className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-[#66B821] bg-[#66B821]/15 px-3 py-1 rounded-full border border-[#66B821]/30">
+                  <ShieldCheck className="w-3.5 h-3.5" />
+                  <span>Official MECH TECH RFQ &amp; Sales Enquiry</span>
+                </div>
+                <h3 className="font-display font-extrabold text-xl sm:text-2xl text-white mt-1.5 leading-snug">
+                  Enquire Now / Get Quote
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-lg leading-relaxed">
+                  Fill in your details below to receive technical specifications, formal quotation, and dispatch lead time from our engineering team.
+                </p>
+              </div>
             </div>
 
             <button
